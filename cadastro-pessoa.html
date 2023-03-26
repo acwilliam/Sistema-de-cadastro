@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Funcionario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <style>
+        .cadastro {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cadastro">
+        <h1>Cadastro de Pessoas</h1>
+        <form id=cadastro-pessoa-form>
+            <label id=nome-cadastro for="nome">Nome:</label>
+            <input id=nome type="text" id="nome" name="nome" required><br>
+
+            <label id=nome-cadastro for="sobrenome">Sobrenome:</label>
+            <input id=sobrenome type="text" id="sobrenome" name="sobrenome" required><br>
+
+            <label id=nome-cadastro for="data_nascimento">Data de Nascimento:</label>
+            <input id=data-nascimento type="date" id="data-nascimento" name="data-nascimento" required><br>
+
+            <label id=nome-cadastro for="telefone">Telefone:</label>
+            <input id=telefone type="tel" id="telefone" name="telefone" required><br>
+
+            <label id=nome-cadastro for="email">E-mail:</label>
+            <input id=email type="email" id="email" name="email required"><br>
+            <div class="button-container">
+                <button class="btn btn-primary" type="submit">Cadastrar</button>
+                <button class="btn btn-secondary" type="button" onclick="window.location.href='pagina-inicio.html'">Voltar</button>
+            </div>
+        </form> 
+        <div class="message-signup-error" id="message-signup-error"></div>
+        <div class="sucess-message" id="sucess-message"></div>   
+    </div> 
+    </form>   
+    </div>
+    <script type="module" src="cadastro-pessoa.js"></script>
+</body>
+</html>
