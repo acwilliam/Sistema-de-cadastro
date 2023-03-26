@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <input type="checkbox" id="chk" aria-hidden="true">
+
+      <div class="signup">
+				<form id="signup-form"> 
+					<label for="chk" aria-hidden="true">Cadastre-se</label>
+					<input id=namesignup type="text" name="txt" placeholder="Nome completo" required="">
+					<input id=emailsignup type="email" name="email" placeholder="Email" required="">
+					<input id=passwordsignup type="password" name="pswd" placeholder="Password" required="">
+					<button type="submit">Cadastrar</button>
+				</form>
+        <div class="message-signup-error" id="message-signup-error"></div>
+        <div class="sucess-message" id="sucess-message"></div>
+			</div>
+
+      <div class="login">
+				<form id="login-form">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input id=email type="email" name="email" placeholder="Email" required="">
+					<input id=password type="password" name="pswd" placeholder="Password" required="">
+					<button type="submit">Login</button>
+				</form>
+        <div class="error-message" id="error-message"></div>
+        <div class="sucess-message" id="sucess-message"></div>
+			</div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="criar-conta.js"></script>
+  </body>
+</html>
